@@ -1,0 +1,58 @@
+<html>
+	<head>
+		<title>Smart Talking Mirror</title>
+		<!--CSS-->
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/weather-icons.css">
+		
+		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+		 <!--JS Scripts-->
+		<script src="js/jquery.feedToJSON.js"></script>
+		<script src="js/moment-with-langs.min.js"></script>
+		<script src="js/speak.js"></script>
+		<script src="js/annyang.min.js"></script>
+		
+		<script src="js/main.js"></script>
+		
+		 <!--Fonts-->
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,800,700italic,800italic&subset=latin,greek' rel='stylesheet' type='text/css'>
+		 <!--Meta-->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	</head>
+	<body>
+		<div class="column-center">
+			<div id="display-area" class="display-area small" >
+				<ul id="sports"></ul>
+				<div id="lunch"></div>
+			</div>
+			<div class="compliment light"></div>
+			<div class="newshead newsh medium"></div>
+		</div>
+		<div class="column-left">
+		   <div class="date small dimmed"></div>
+		   <div class="time"></div>
+		   <div id="tryme">
+			<h3></h3>Try me.... just say:</h3>
+			<ul>
+				<li>1. What time is it?</li>
+				<li>2. Time</li>
+				<li>3. Weather</li>
+				<li>4. Sports</li>
+				<li>5. Feeling hungry</li>
+				<li>6. Hungry</li>
+				<li>7. Close Sports or Close Lunch</li>
+			</ul>									
+		</div>
+		</div>
+		<div class="column-right">
+		   <div class="windsun small dimmed"></div>
+		   <div style="clear:both;"></div>
+		   <div class="temp" id="temp"></div>
+		   <div style="clear:both;"></div>
+		   <div class="forecast small dimmed"></div>
+		</div>
+		
+		<div id="audio"></div>
+		<div id="unsupported"></div>
+	</body>
+</html>
